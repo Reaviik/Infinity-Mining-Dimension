@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "infinity_mining_dimension:infinity_mining_biome",
+      "lakes": true,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:end_stone",
+          "height": 32
+        },
+        {
+          "block": "minecraft:netherrack",
+          "height": 32
+        },
+        {
+          "block": "minecraft:deepslate",
+          "height": 32
+        },
+        {
+          "block": "minecraft:stone",
+          "height": 32
+        },
+        {
+          "block": "minecraft:gravel",
+          "height": 5
+        },
+        {
+          "block": "minecraft:sand",
+          "height": 3
+        },
+        {
+          "block": "minecraft:red_sand",
+          "height": 1
+        },
+        {
+          "block": "minecraft:grass_block",
+          "height": 1
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}
