@@ -2,8 +2,10 @@
 
 /execute in infinity_mining_dimension:mining run tp ~ ~ ~
 
--------74-------
+-------79-------
 Grass
+-------78-------
+Dirt
 -------73-------
 Red Sand
 -------72-------
@@ -68,6 +70,7 @@ deepslate_lapis_ore
 deepslate_redstone_ore
 deepslate_diamond_ore
 deepslate_emerald_ore
+deepslate_infinity
 deepslate_dark
 deepslate_uraninite
 deepslate_gobber
@@ -83,6 +86,7 @@ deepslate_sulfur
 deepslate_tin
 deepslate_bauxite
 deepslate_lead
+deepslate_silver
 deepslate_nickel
 deepslate_ruby
 deepslate_sapphire

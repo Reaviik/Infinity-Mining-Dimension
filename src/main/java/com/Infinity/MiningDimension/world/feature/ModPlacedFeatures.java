@@ -1,105 +1,23 @@
 package com.Infinity.MiningDimension.world.feature;
 
-import com.Infinity.MiningDimension.config.ModCommonConfigs;
-import net.minecraft.core.Holder;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-
 public class ModPlacedFeatures {
- public static final Holder<PlacedFeature> COAL = PlacementUtils.register("infinity_mining_dimension_coal", ModConfiguredFeatures.COAL_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.COAL_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> COPPER = PlacementUtils.register("infinity_mining_dimension_copper", ModConfiguredFeatures.COPPER_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.COPPER_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> IRON = PlacementUtils.register("infinity_mining_dimension_iron", ModConfiguredFeatures.IRON_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.IRON_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> GOLD = PlacementUtils.register("infinity_mining_dimension_gold", ModConfiguredFeatures.GOLD_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.GOLD_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> LAPIS = PlacementUtils.register("infinity_mining_dimension_lapis", ModConfiguredFeatures.LAPIS_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.LAPIS_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> REDSTONE = PlacementUtils.register("infinity_mining_dimension_redstone", ModConfiguredFeatures.REDSTONE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.REDSTONE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> DIAMOND = PlacementUtils.register("infinity_mining_dimension_diamond", ModConfiguredFeatures.DIAMOND_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DIAMOND_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> EMERALD = PlacementUtils.register("infinity_mining_dimension_emerald", ModConfiguredFeatures.EMERALD_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.EMERALD_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> INFINITY = PlacementUtils.register("infinity_mining_dimension_infinity", ModConfiguredFeatures.INFINITY, ModOrePlacement.commonOrePlacement(ModCommonConfigs.INFINITY_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> DARK = PlacementUtils.register("infinity_mining_dimension_dark", ModConfiguredFeatures.DARK_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DARK_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> URANINITE = PlacementUtils.register("infinity_mining_dimension_uraninite", ModConfiguredFeatures.URANINITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.URANINITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> GOBBER = PlacementUtils.register("infinity_mining_dimension_gobbee", ModConfiguredFeatures.GOBBER_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.GOBBER_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> OSMIUM = PlacementUtils.register("infinity_mining_dimension_osmium", ModConfiguredFeatures.OSMIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.OSMIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> FLUORITE = PlacementUtils.register("infinity_mining_dimension_fluorite", ModConfiguredFeatures.FLUORITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.FLUORITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> DRACONIUM = PlacementUtils.register("infinity_mining_dimension_draconium", ModConfiguredFeatures.DRACONIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DRACONIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> PROSPERITY = PlacementUtils.register("infinity_mining_dimension_prosperity", ModConfiguredFeatures.PROSPERITY_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.PROSPERITY_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> INFERIUM = PlacementUtils.register("infinity_mining_dimension_inferium", ModConfiguredFeatures.INFERIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.INFERIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> APATITE = PlacementUtils.register("infinity_mining_dimension_apatite", ModConfiguredFeatures.APATITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.APATITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> CINNABAR = PlacementUtils.register("infinity_mining_dimension_cinnabar", ModConfiguredFeatures.CINNABAR_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.CINNABAR_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> NITER = PlacementUtils.register("infinity_mining_dimension_niter", ModConfiguredFeatures.NITER_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.NITER_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> SULFUR = PlacementUtils.register("infinity_mining_dimension_sulfur", ModConfiguredFeatures.SULFUR_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.SULFUR_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> TIN = PlacementUtils.register("infinity_mining_dimension_tin", ModConfiguredFeatures.TIN_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.TIN_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> BAUXITE = PlacementUtils.register("infinity_mining_dimension_bauxite", ModConfiguredFeatures.BAUXITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.BAUXITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> LEAD = PlacementUtils.register("infinity_mining_dimension_lead", ModConfiguredFeatures.LEAD_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.LEAD_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> NICKEL = PlacementUtils.register("infinity_mining_dimension_nickel", ModConfiguredFeatures.NICKEL_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.NICKEL_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> RUBY = PlacementUtils.register("infinity_mining_dimension_ruby", ModConfiguredFeatures.RUBY_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.RUBY_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> SAPPHIRE = PlacementUtils.register("infinity_mining_dimension_sapphire", ModConfiguredFeatures.SAPPHIRE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.SAPPHIRE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> URANIUM = PlacementUtils.register("infinity_mining_dimension_uranium", ModConfiguredFeatures.URANIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.URANIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> CERTUS_QUARTZ = PlacementUtils.register("infinity_mining_dimension_certus_quartz", ModConfiguredFeatures.CERTUS_QUARTZ_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.CERTUS_QUARTZ_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> EXPETRIFIED = PlacementUtils.register("infinity_mining_dimension_expetrified", ModConfiguredFeatures.EXPETRIFIED_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.EXPETRIFIED_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> ARCANE_CRYSTAL = PlacementUtils.register("infinity_mining_dimension_arcane_crystal", ModConfiguredFeatures.ARCANE_CRYSTAL_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.ARCANE_CRYSTAL_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> BITUMINOUS_SAND = PlacementUtils.register("infinity_mining_dimension_bituminous_sand", ModConfiguredFeatures.BITUMINOUS_SAND_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.BITUMINOUS_SAND_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(69), VerticalAnchor.aboveBottom(72))));
- public static final Holder<PlacedFeature> BITUMINOUS_RED_SAND = PlacementUtils.register("infinity_mining_dimension_bituminous_red_sand", ModConfiguredFeatures.BITUMINOUS_RED_SAND_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.BITUMINOUS_RED_SAND_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(72), VerticalAnchor.aboveBottom(73))));
- public static final Holder<PlacedFeature> ELEMENTIUM = PlacementUtils.register("infinity_mining_dimension_elementium", ModConfiguredFeatures.ELEMENTIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.ELEMENTIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(32), VerticalAnchor.aboveBottom(64))));
- public static final Holder<PlacedFeature> DEEPSLATE_COAL = PlacementUtils.register("infinity_mining_dimension_deepslate_coal_ore", ModConfiguredFeatures.DEEPSLATE_COAL_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_COAL_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_COPPER = PlacementUtils.register("infinity_mining_dimension_deepslate_copper_ore", ModConfiguredFeatures.DEEPSLATE_COPPER_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_COPPER_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_IRON = PlacementUtils.register("infinity_mining_dimension_deepslate_iron_ore", ModConfiguredFeatures.DEEPSLATE_IRON_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_IRON_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_GOLD = PlacementUtils.register("infinity_mining_dimension_deepslate_gold_ore", ModConfiguredFeatures.DEEPSLATE_GOLD_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_GOLD_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_LAPIS = PlacementUtils.register("infinity_mining_dimension_deepslate_lapis_ore", ModConfiguredFeatures.DEEPSLATE_LAPIS_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_LAPIS_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_REDSTONE = PlacementUtils.register("infinity_mining_dimension_deepslate_redstone_ore", ModConfiguredFeatures.DEEPSLATE_REDSTONE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_REDSTONE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_DIAMOND = PlacementUtils.register("infinity_mining_dimension_deepslate_diamond_ore", ModConfiguredFeatures.DEEPSLATE_DIAMOND_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_DIAMOND_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_EMERALD = PlacementUtils.register("infinity_mining_dimension_deepslate_emerald_ore", ModConfiguredFeatures.DEEPSLATE_EMERALD_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_EMERALD_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_DARK = PlacementUtils.register("infinity_mining_dimension_deepslate_dark_ore", ModConfiguredFeatures.DEEPSLATE_DARK_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_DARK_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_URANINITE = PlacementUtils.register("infinity_mining_dimension_deepslate_uraninite_ore", ModConfiguredFeatures.DEEPSLATE_URANINITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_URANINITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_GOBBER = PlacementUtils.register("infinity_mining_dimension_deepslate_gobber_ore", ModConfiguredFeatures.DEEPSLATE_GOBBER_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_GOBBER_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_OSMIUM = PlacementUtils.register("infinity_mining_dimension_deepslate_osmium_ore", ModConfiguredFeatures.DEEPSLATE_OSMIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_OSMIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_FLUORITE = PlacementUtils.register("infinity_mining_dimension_deepslate_fluorite_ore", ModConfiguredFeatures.DEEPSLATE_FLUORITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_FLUORITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_DRACONIUM = PlacementUtils.register("infinity_mining_dimension_deepslate_draconium_ore", ModConfiguredFeatures.DEEPSLATE_DRACONIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_DRACONIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_PROSPERITY = PlacementUtils.register("infinity_mining_dimension_deepslate_prosperity_ore", ModConfiguredFeatures.DEEPSLATE_PROSPERITY_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_PROSPERITY_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_INFERIUM = PlacementUtils.register("infinity_mining_dimension_deepslate_inferium_ore", ModConfiguredFeatures.DEEPSLATE_INFERIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_INFERIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_APATITE = PlacementUtils.register("infinity_mining_dimension_deepslate_apatite_ore", ModConfiguredFeatures.DEEPSLATE_APATITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_APATITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_CINNABAR = PlacementUtils.register("infinity_mining_dimension_deepslate_cinnabar_ore", ModConfiguredFeatures.DEEPSLATE_CINNABAR_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_CINNABAR_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_NITER = PlacementUtils.register("infinity_mining_dimension_deepslate_niter_ore", ModConfiguredFeatures.DEEPSLATE_NITER_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_NITER_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_SULFUR = PlacementUtils.register("infinity_mining_dimension_deepslate_sulfur_ore", ModConfiguredFeatures.DEEPSLATE_SULFUR_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_SULFUR_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_TIN = PlacementUtils.register("infinity_mining_dimension_deepslate_tin_ore", ModConfiguredFeatures.DEEPSLATE_TIN_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_TIN_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_BAUXITE = PlacementUtils.register("infinity_mining_dimension_deepslate_bauxite_ore", ModConfiguredFeatures.DEEPSLATE_BAUXITE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_BAUXITE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_LEAD = PlacementUtils.register("infinity_mining_dimension_deepslate_lead_ore", ModConfiguredFeatures.DEEPSLATE_LEAD_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_LEAD_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_NICKEL = PlacementUtils.register("infinity_mining_dimension_deepslate_nickel_ore", ModConfiguredFeatures.DEEPSLATE_NICKEL_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_NICKEL_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_RUBY = PlacementUtils.register("infinity_mining_dimension_deepslate_ruby_ore", ModConfiguredFeatures.DEEPSLATE_RUBY_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_RUBY_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_SAPPHIRE = PlacementUtils.register("infinity_mining_dimension_deepslate_sapphire_ore", ModConfiguredFeatures.DEEPSLATE_SAPPHIRE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_SAPPHIRE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_URANIUM = PlacementUtils.register("infinity_mining_dimension_deepslate_uranium_ore", ModConfiguredFeatures.DEEPSLATE_URANIUM_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_URANIUM_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_CERTUS_QUARTZ = PlacementUtils.register("infinity_mining_dimension_deepslate_certus_quartz_ore", ModConfiguredFeatures.DEEPSLATE_CERTUS_QUARTZ_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_CERTUS_QUARTZ_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DEEPSLATE_ARCANE_CRYSTAL = PlacementUtils.register("infinity_mining_dimension_deepslate_arcane_crystal_ore", ModConfiguredFeatures.DEEPSLATE_ARCANE_CRYSTAL_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DEEPSLATE_ARCANE_CRYSTAL_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
-
- public static final Holder<PlacedFeature> DRAGONSTONE = PlacementUtils.register("infinity_mining_dimension_dragonstone_ore", ModConfiguredFeatures.DRAGONSTONE_ORE, ModOrePlacement.commonOrePlacement(ModCommonConfigs.DRAGONSTONE_VEINS.get(), HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(32))));
+ public static int GrassMinY = 78;
+ public static int GrassMaxY = 79;
+ public static int dirtMinY = 73;
+ public static int dirtMaxY = 78;
+ public static int redSandMinY = 72;
+ public static int redSandMaxY = 73;
+ public static int sandMinY = 69;
+ public static int sandMaxY = 72;
+ public static int gravelMinY = 64;
+ public static int gravelMaxY = 69;
+ public static int stoneMinY = 32;
+ public static int stoneMaxY = 64;
+ public static int deepslateMinY = -1;
+ public static int deepslateMaxY = 32;
+ public static int netherrackMinY = -32;
+ public static int netherrackMaxY = -1;
+ public static int endStoneMinY = -64;
+ public static int endStoneMaxY = -32;
 
 }

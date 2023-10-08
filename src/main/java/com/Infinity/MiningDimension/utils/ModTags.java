@@ -11,8 +11,14 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> INFINITY_MINING_PORTAL_FRAME
                 = tag("infinity_mining_dimension_portal_frame");
-        public static final TagKey<Block> END_BASE_STONE
-                = tag("end_base_stone");
+        public static final TagKey<Block> END_STONE_REPLACEABLES
+                = tag("end_stone_replaceables");
+        public static final TagKey<Block> SAND_REPLACEABLES
+                = tag("sand_replaceables");
+        public static final TagKey<Block> RED_SAND_REPLACEABLES
+                = tag("red_sand_replaceables");
+        public static final TagKey<Block> GRAVEL_REPLACEABLES
+                = tag("gravel_replaceables");
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(InfinityMiningDimension.MOD_ID, name));
         }

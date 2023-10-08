@@ -36,7 +36,22 @@
   },
   "spawn_costs": {},
   "carvers": {
-    "air": []
+    "air": [
+      "minecraft:cave_extra_underground",
+      "minecraft:cave",
+      "minecraft:canyon",
+      "minecraft:nether_cave"
+    ]
   },
-  "features": []
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    "minecraft:crimson_forest_vegetation",
+    "minecraft:basalt_pillar",
+    "minecraft:warped_fungi",
+    "minecraft:weeping_vines",
+    "minecraft:twisting_vines"
+  ]
 }

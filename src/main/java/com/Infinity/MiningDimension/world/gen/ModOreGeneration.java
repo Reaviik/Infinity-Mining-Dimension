@@ -1,89 +1,201 @@
 package com.Infinity.MiningDimension.world.gen;
 
 import com.Infinity.MiningDimension.InfinityMiningDimension;
-import com.Infinity.MiningDimension.world.feature.ModPlacedFeatures;
+import com.Infinity.MiningDimension.config.*;
+import com.Infinity.MiningDimension.world.feature.draconic.DraconicPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.gobber.GobberPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.immersive.ImmersivePlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.mekanism.MekanismPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.minecraft.MinecraftPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.misc.MiscPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.mystical.MysticalPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.powah.PowahPlacedFeatures;
+import com.Infinity.MiningDimension.world.feature.thermal.ThermalPlacedFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-import terrablender.core.TerraBlenderForge;
 
 import java.util.List;
 import java.util.Objects;
 
-public class ModOreGeneration extends TerraBlenderForge {
+public class ModOreGeneration {
         public static void generateOres(final BiomeLoadingEvent event) {
             List<Holder<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
+            if(Objects.equals(event.getName(), new ResourceLocation(InfinityMiningDimension.MOD_ID + ":infinity_mining_biome"))) {
+                if(MinecraftCommonConfigs.MINECRAFT.get()) {
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_COAL);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_COPPER);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_IRON);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_GOLD);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_LAPIS);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_REDSTONE);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DIAMOND);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_EMERALD);
 
-            System.out.println("\n\n\nBioma Raw\n"+event.getName()+"\n\n\n");
-            if(event.getCategory() == Biome.BiomeCategory.MUSHROOM) {
-                System.out.println("\n\n\nBioma?\n"+event.getName()+"\n\n\n");
-                base.add(ModPlacedFeatures.COAL);
-                base.add(ModPlacedFeatures.COPPER);
-                base.add(ModPlacedFeatures.IRON);
-                base.add(ModPlacedFeatures.GOLD);
-                base.add(ModPlacedFeatures.LAPIS);
-                base.add(ModPlacedFeatures.REDSTONE);
-                base.add(ModPlacedFeatures.DIAMOND);
-                base.add(ModPlacedFeatures.EMERALD);
-                base.add(ModPlacedFeatures.INFINITY);
-                base.add(ModPlacedFeatures.DARK);
-                base.add(ModPlacedFeatures.URANINITE);
-                base.add(ModPlacedFeatures.GOBBER);
-                base.add(ModPlacedFeatures.OSMIUM);
-                base.add(ModPlacedFeatures.FLUORITE);
-                base.add(ModPlacedFeatures.DRACONIUM);
-                base.add(ModPlacedFeatures.PROSPERITY);
-                base.add(ModPlacedFeatures.INFERIUM);
-                base.add(ModPlacedFeatures.APATITE);
-                base.add(ModPlacedFeatures.CINNABAR);
-                base.add(ModPlacedFeatures.NITER);
-                base.add(ModPlacedFeatures.SULFUR);
-                base.add(ModPlacedFeatures.TIN);
-                base.add(ModPlacedFeatures.BAUXITE);
-                base.add(ModPlacedFeatures.LEAD);
-                base.add(ModPlacedFeatures.NICKEL);
-                base.add(ModPlacedFeatures.RUBY);
-                base.add(ModPlacedFeatures.SAPPHIRE);
-                base.add(ModPlacedFeatures.URANIUM);
-                base.add(ModPlacedFeatures.CERTUS_QUARTZ);
-                base.add(ModPlacedFeatures.EXPETRIFIED);
-                base.add(ModPlacedFeatures.ARCANE_CRYSTAL);
-                base.add(ModPlacedFeatures.BITUMINOUS_SAND);
-                base.add(ModPlacedFeatures.BITUMINOUS_RED_SAND);
-                base.add(ModPlacedFeatures.ELEMENTIUM);
-                base.add(ModPlacedFeatures.DEEPSLATE_COAL);
-                base.add(ModPlacedFeatures.DEEPSLATE_COPPER);
-                base.add(ModPlacedFeatures.DEEPSLATE_IRON);
-                base.add(ModPlacedFeatures.DEEPSLATE_GOLD);
-                base.add(ModPlacedFeatures.DEEPSLATE_LAPIS);
-                base.add(ModPlacedFeatures.DEEPSLATE_REDSTONE);
-                base.add(ModPlacedFeatures.DEEPSLATE_DIAMOND);
-                base.add(ModPlacedFeatures.DEEPSLATE_EMERALD);
-                base.add(ModPlacedFeatures.DEEPSLATE_DARK);
-                base.add(ModPlacedFeatures.DEEPSLATE_URANINITE);
-                base.add(ModPlacedFeatures.DEEPSLATE_GOBBER);
-                base.add(ModPlacedFeatures.DEEPSLATE_OSMIUM);
-                base.add(ModPlacedFeatures.DEEPSLATE_FLUORITE);
-                base.add(ModPlacedFeatures.DEEPSLATE_DRACONIUM);
-                base.add(ModPlacedFeatures.DEEPSLATE_PROSPERITY);
-                base.add(ModPlacedFeatures.DEEPSLATE_INFERIUM);
-                base.add(ModPlacedFeatures.DEEPSLATE_APATITE);
-                base.add(ModPlacedFeatures.DEEPSLATE_CINNABAR);
-                base.add(ModPlacedFeatures.DEEPSLATE_NITER);
-                base.add(ModPlacedFeatures.DEEPSLATE_SULFUR);
-                base.add(ModPlacedFeatures.DEEPSLATE_TIN);
-                base.add(ModPlacedFeatures.DEEPSLATE_BAUXITE);
-                base.add(ModPlacedFeatures.DEEPSLATE_LEAD);
-                base.add(ModPlacedFeatures.DEEPSLATE_NICKEL);
-                base.add(ModPlacedFeatures.DEEPSLATE_RUBY);
-                base.add(ModPlacedFeatures.DEEPSLATE_SAPPHIRE);
-                base.add(ModPlacedFeatures.DEEPSLATE_URANIUM);
-                base.add(ModPlacedFeatures.DEEPSLATE_CERTUS_QUARTZ);
-                base.add(ModPlacedFeatures.DEEPSLATE_ARCANE_CRYSTAL);
-                base.add(ModPlacedFeatures.DRAGONSTONE);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_COAL);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_COPPER);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_IRON);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_GOLD);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_LAPIS);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_REDSTONE);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_DIAMOND);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_DEEPSLATE_EMERALD);
+
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_NETHER_GOLD);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_NETHER_QUARTZ);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_NETHER_DEBRIS);
+                    base.add(MinecraftPlacedFeatures.MINECRAFT_NETHER_SOULSAND);
+
+                }
+                if(MekanismCommonConfigs.MEKANISM.get()) {
+                    base.add(MekanismPlacedFeatures.MEKANISM_OSMIUM);
+                    base.add(MekanismPlacedFeatures.MEKANISM_TIN);
+                    base.add(MekanismPlacedFeatures.MEKANISM_LEAD);
+                    base.add(MekanismPlacedFeatures.MEKANISM_URANIUM);
+                    base.add(MekanismPlacedFeatures.MEKANISM_FLUORITE);
+
+                    base.add(MekanismPlacedFeatures.MEKANISM_DEEPSLATE_OSMIUM);
+                    base.add(MekanismPlacedFeatures.MEKANISM_DEEPSLATE_TIN);
+                    base.add(MekanismPlacedFeatures.MEKANISM_DEEPSLATE_LEAD);
+                    base.add(MekanismPlacedFeatures.MEKANISM_DEEPSLATE_URANIUM);
+                    base.add(MekanismPlacedFeatures.MEKANISM_DEEPSLATE_FLUORITE);
+                }
+                if (ThermalCommonConfigs.THERMAL.get()) {
+
+                    base.add(ThermalPlacedFeatures.THERMAL_APATITE);
+                    base.add(ThermalPlacedFeatures.THERMAL_CINNABAR);
+                    base.add(ThermalPlacedFeatures.THERMAL_NITER);
+                    base.add(ThermalPlacedFeatures.THERMAL_SULFUR);
+                    base.add(ThermalPlacedFeatures.THERMAL_TIN);
+                    base.add(ThermalPlacedFeatures.THERMAL_LEAD);
+                    base.add(ThermalPlacedFeatures.THERMAL_NICKEL);
+                    base.add(ThermalPlacedFeatures.THERMAL_SILVER);
+                    base.add(ThermalPlacedFeatures.THERMAL_RUBY);
+                    base.add(ThermalPlacedFeatures.THERMAL_SAPPHIRE);
+
+                    base.add(ThermalPlacedFeatures.THERMAL_BITUMINOUS_SAND);
+                    base.add(ThermalPlacedFeatures.THERMAL_BITUMINOUS_RED_SAND);
+
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_APATITE);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_CINNABAR);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_NITER);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_SULFUR);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_TIN);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_LEAD);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_NICKEL);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_SILVER);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_RUBY);
+                    base.add(ThermalPlacedFeatures.THERMAL_DEEPSLATE_SAPPHIRE);
+                }
+                if (ImmersiveCommonConfigs.IMMERSIVE.get()) {
+
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_BAUXITE);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_SILVER);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_LEAD);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_NICKEL);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_URANIUM);
+
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_DEEPSLATE_BAUXITE);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_DEEPSLATE_SILVER);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_DEEPSLATE_LEAD);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_DEEPSLATE_NICKEL);
+                    base.add(ImmersivePlacedFeatures.IMMERSIVE_DEEPSLATE_URANIUM);
+
+                }
+                if (DraconicCommonConfigs.DRACONIC.get()) {
+
+                    base.add(DraconicPlacedFeatures.DRACONIC_DRACONIUM);
+
+                    base.add(DraconicPlacedFeatures.DRACONIC_DEEPSLATE_DRACONIUM);
+
+                    base.add(DraconicPlacedFeatures.DRACONIC_NETHER_DRACONIUM);
+
+                    base.add(DraconicPlacedFeatures.DRACONIC_END_DRACONIUM);
+                }
+                if (GobberCommonConfigs.GOBBER.get()) {
+
+                    base.add(GobberPlacedFeatures.GOBBER_GOBBER);
+
+                    base.add(GobberPlacedFeatures.GOBBER_DEEPSLATE_GOBBER);
+
+                    base.add(GobberPlacedFeatures.GOBBER_NETHER_GOBBER);
+
+                    base.add(GobberPlacedFeatures.GOBBER_END_GOBBER);
+                }
+                if (MysticalCommonConfigs.MYSTICAL.get()) {
+
+                    base.add(MysticalPlacedFeatures.MYSTICAL_PROSPERITY);
+                    base.add(MysticalPlacedFeatures.MYSTICAL_INFERIUM);
+
+                    base.add(MysticalPlacedFeatures.MYSTICAL_DEEPSLATE_PROSPERITY);
+                    base.add(MysticalPlacedFeatures.MYSTICAL_DEEPSLATE_INFERIUM);
+
+                    base.add(MysticalPlacedFeatures.MYSTICAL_NETHER_PROSPERITY);
+                    base.add(MysticalPlacedFeatures.MYSTICAL_NETHER_SOULIUM);
+                    base.add(MysticalPlacedFeatures.MYSTICAL_NETHER_INFERIUM);
+
+                    base.add(MysticalPlacedFeatures.MYSTICAL_END_PROSPERITY);
+                    base.add(MysticalPlacedFeatures.MYSTICAL_END_INFERIUM);
+                }
+                if (PowahCommonConfigs.POWAH.get()) {
+
+                    base.add(PowahPlacedFeatures.POWAH_URANINITE);
+                    base.add(PowahPlacedFeatures.POWAH_URANINITE_POOR);
+                    base.add(PowahPlacedFeatures.POWAH_URANINITE_DENSE);
+
+                    base.add(PowahPlacedFeatures.POWAH_DRY_ICE);
+
+                    base.add(PowahPlacedFeatures.POWAH_DEEPSLATE_URANINITE);
+                    base.add(PowahPlacedFeatures.POWAH_DEEPSLATE_URANINITE_POOR);
+                    base.add(PowahPlacedFeatures.POWAH_DEEPSLATE_URANINITE_DENSE);
+                }
+                if (MiscCommonConfigs.TINKERS.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_NETHER_COBALT);
+                }
+                if (MiscCommonConfigs.INFINITY.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_INFINITY);
+
+                    base.add(MiscPlacedFeatures.MISC_DEEPSLATE_INFINITY);
+                }
+                if (MiscCommonConfigs.EVILCRAFT.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_DARK);
+
+                    base.add(MiscPlacedFeatures.MISC_DEEPSLATE_DARK);
+                }
+                if (MiscCommonConfigs.AE2.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_CERTUS_QUARTZ);
+
+                    base.add(MiscPlacedFeatures.MISC_DEEPSLATE_CERTUS_QUARTZ);
+                }
+                if (MiscCommonConfigs.FORBIDEN.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_EXPETRIFIED);
+                    base.add(MiscPlacedFeatures.MISC_ARCANE_CRYSTAL);
+
+                    base.add(MiscPlacedFeatures.MISC_DEEPSLATE_ARCANE_CRYSTAL);
+                }
+                if (MiscCommonConfigs.MYTHIC_BOTANY.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_ELEMENTIUM);
+                    base.add(MiscPlacedFeatures.MISC_DRAGONSTONE);
+                }
+                if (MiscCommonConfigs.EXTREME_REACTORS.get()) {
+
+                    base.add(MiscPlacedFeatures.MISC_YELLORITE);
+
+                    base.add(MiscPlacedFeatures.MISC_NETHER_BENITOIDE);
+
+                    base.add(MiscPlacedFeatures.MISC_END_ANGLESITE);
+                }
+                if (MiscCommonConfigs.OCCULTISM.get()) {
+                    base.add(MiscPlacedFeatures.MISC_NETHER_IESNIUM);
+                }
             }
         }
     }
