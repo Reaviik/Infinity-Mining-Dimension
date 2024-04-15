@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '1.1.5'
+version = '3.0.3-1.18.2'
 group = 'infinity_mining_dimension' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Infinity-Mining-Dimension'
 
@@ -145,6 +145,13 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {

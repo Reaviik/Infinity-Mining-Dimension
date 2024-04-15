@@ -1,8 +1,8 @@
 {
   "temperature": -0.25,
   "downfall": 0.5,
-  "precipitation": "none",
-  "category": "mushroom",
+  "precipitation": "rain",
+  "category": "plains",
   "creature_spawn_probability": 0,
   "effects": {
     "sky_color": 12446972,
@@ -27,7 +27,32 @@
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [],
+    "creature": [
+      {
+        "type": "minecraft:cow",
+        "weight": 75,
+        "minCount": 0,
+        "maxCount": 20
+      },
+      {
+        "type": "minecraft:sheep",
+        "weight": 75,
+        "minCount": 0,
+        "maxCount": 20
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 75,
+        "minCount": 0,
+        "maxCount": 20
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 75,
+        "minCount": 0,
+        "maxCount": 20
+      }
+    ],
     "misc": [],
     "monster": [],
     "underground_water_creature": [],
@@ -48,10 +73,22 @@
     [],
     [],
     [],
-    "minecraft:crimson_forest_vegetation",
-    "minecraft:basalt_pillar",
-    "minecraft:warped_fungi",
-    "minecraft:weeping_vines",
-    "minecraft:twisting_vines"
+    [],
+    [],
+    [],
+    [
+      "minecraft:trees_plains",
+      "minecraft:patch_grass_plain",
+      "minecraft:flower_plains",
+      "minecraft:forest_rock",
+      "minecraft:patch_melon_sparse",
+      "minecraft:trees_sparse_jungle",
+      "minecraft:forest_flowers",
+      "minecraft:bamboo_light",
+      "minecraft:patch_cactus",
+      "minecraft:flower_swamp",
+      "minecraft:fancy_oak_bees",
+      "minecraft:patch_pumpkin"
+    ]
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "infinity_mining_dimension:spawn",
+      "lakes": true,
+      "features": true,
+      "layers": [
+      ],
+      "structure_overrides": []
+    }
+  }
+}

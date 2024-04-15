@@ -1,0 +1,133 @@
+/fill ~ ~ ~ ~-30 ~-30 ~-30 air
+
+/execute in infinity_mining_dimension:infinity_mining_dimension run tp ~ ~ ~
+-------79-------
+Grass
+-------78-------
+Dirt
+-------73-------
+Red Sand
+-------72-------
+Sand
+-------69-------
+Gravel
+-------64-------
+Stone
+-------032-------
+Deepslate
+--------0--------
+Netherrack
+--------32-------
+EndStone
+--------64-------
+
+coal_ore
+copper_ore
+iron_ore
+gold_ore
+lapis_ore
+redstone_ore
+diamond_ore
+emerald_ore
+debris_ore
+xpetrified
+lead
+arcane_crystal
+vinteum
+certus_quartz
+infinity_ore
+dark
+uraninite
+gobber
+osmium
+fluorite
+draconium
+prosperity
+inferium
+apatite
+cinnabar
+niter
+sulfur
+tin
+bauxite
+lead
+nickel
+ruby
+sapphire
+uranium
+certus_quartz
+expetrified
+arcane_crystal
+bituminous_sand
+elementium
+consegue fazer para estes items tambem?
+deepslate_coal_ore
+deepslate_copper_ore
+deepslate_iron_ore
+deepslate_gold_ore
+deepslate_lapis_ore
+deepslate_redstone_ore
+deepslate_diamond_ore
+deepslate_emerald_ore
+deepslate_infinity
+deepslate_dark
+deepslate_uraninite
+deepslate_gobber
+deepslate_osmium
+deepslate_fluorite
+deepslate_draconium
+deepslate_prosperity
+deepslate_inferium
+deepslate_apatite
+deepslate_cinnabar
+deepslate_niter
+deepslate_sulfur
+deepslate_tin
+deepslate_bauxite
+deepslate_lead
+deepslate_silver
+deepslate_nickel
+deepslate_ruby
+deepslate_sapphire
+deepslate_uranium
+deepslate_certus_quartz
+deepslate_arcane_crystal
+bituminous_red_sand
+dragonstone
+netehr_gold
+netehr_quartz
+netehr_gobber
+netehr_draconium
+netehr_prosperity
+netehr_soulium
+netehr_inferium
+netehr_benitoide
+netehr_cobalt
+netehr_iesnium
+netehr_debris
+end_chorundum
+end_gobber
+end_draconium
+end_prosperity
+end_inferium
+end_anglesite
+
+
+the_vault:ore_alexandrite OK
+the_vault:ore_ashium OK
+the_vault:ore_benitoite OK
+the_vault:ore_black_opal OK
+the_vault:ore_bomignite OK
+the_vault:ore_echo OK
+the_vault:ore_gorginite OK
+the_vault:ore_iskallium OK
+the_vault:ore_larimar OK
+the_vault:ore_painite OK
+the_vault:ore_petzanite OK
+the_vault:ore_sparkletine OK
+the_vault:ore_tubium OK
+the_vault:ore_upaline OK
+the_vault:ore_wutodie OK
+the_vault:ore_xenium OK
+the_vault:vault_stonee OK?
+the_vault:chromatic_iron_ore
